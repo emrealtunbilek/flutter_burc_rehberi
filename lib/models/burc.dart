@@ -17,6 +17,7 @@ class Burc {
 
   String get burcKucukResim => _burcKucukResim;
 
+  // ignore: unnecessary_getters_setters
   set burcKucukResim(String value) {
     _burcKucukResim = value;
   }
