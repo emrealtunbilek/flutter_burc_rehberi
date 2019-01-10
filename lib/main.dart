@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_burc_rehberi/burc_detay.dart';
 import 'package:flutter_burc_rehberi/burc_liste.dart';
+import 'package:flutter_burc_rehberi/testlib.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(MyApps());
 
 
-class MyApp extends StatelessWidget{
+class MyApps extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
 
