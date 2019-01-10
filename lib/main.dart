@@ -18,7 +18,14 @@ class MyApp extends StatelessWidget{
       routes: {
         "/" : (context) => BurcListesi(),
         "/burcListesi" : (context) => BurcListesi(),
-        "/burcDetay/123" : (context) => BurcDetay(),
+      },
+
+      onGenerateRoute: (RouteSettings settings){
+        List<String> pathElemanlari = settings.name.split("/"); //  /  burcDetay  /    1
+        if(pathElemanlari[1] == 'burcDetay'){
+          return MaterialPageRoute(builder: (context) => BurcDetay(int.parse(pathElemanlari[2])));
+        }
+        return null;
       },
 
       theme: ThemeData(

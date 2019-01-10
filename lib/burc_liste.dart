@@ -3,7 +3,7 @@ import 'package:flutter_burc_rehberi/models/burc.dart';
 import 'package:flutter_burc_rehberi/utils/strings.dart';
 
 class BurcListesi extends StatelessWidget {
-  List<Burc> tumBurclar;
+  static List<Burc> tumBurclar;
 
   @override
   Widget build(BuildContext context) {
