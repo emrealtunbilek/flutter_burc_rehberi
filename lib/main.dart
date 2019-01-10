@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget{
 
     return MaterialApp(
       title: "Burc Rehberi",
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.pink,
       ),
